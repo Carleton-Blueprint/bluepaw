@@ -1,10 +1,10 @@
 <div align="center">
     <img src="public/bluepaw.png" alt="Logo" width="100" height="100">
 
-  <h2 align="center">CUBlueprint Bluepaw</h2>
+  <h2 align="center">Bluepaw</h2>
 
   <p align="center">
-    Blueprintify Profile Picture - CLI tool
+    Blueprintify Profile Picture - CUBlueprint CLI tool
   </p>
 </div>
 
@@ -21,13 +21,14 @@ Bluepaw is a Python command-line tool that takes a profile picture and some back
 
 ## Features ✨
 
-**Automatic Foreground/Background Separation:** It automatically separates the main subject (foreground) from the background of the input image.
+- **Automatic Foreground/Background Separation:** It automatically separates the main subject (foreground) from the background of the input image.
 
-**Blueprint-style Grayscale:** The tool applies a grayscale effect to both the foreground and background, giving them a blueprint-like appearance.
+- **Blueprint-style Grayscale:** The tool applies a grayscale effect to both the foreground and background, giving them a blueprint-like appearance.
 
-**Customizable Streaks:** Users can provide custom images to use as background and optional foreground "streaks" to add a creative flair to the final output.
+- **Customizable Streaks:** Users can provide custom images to use as background and optional foreground "streaks" to add a creative flair to the final output.
 
-Installation 💻
+**Installation 💻**
+
 To use this tool, you'll need Python 3.7+. The project relies on several external libraries. You can install them using pip:
 
 ```Bash
@@ -39,7 +40,7 @@ pip install rembg
 The tool is run from the command line and requires an input image and a background streak image. An optional foreground streak image can also be provided.
 
 ```Bash
-python bluepaw -h
+python bluepaw.py -h
 ```
 
 ### Command-line Arguments
@@ -57,10 +58,14 @@ python bluepaw -h
 Here's an example of how to run the tool:
 
 ```Bash
-python bluepaw my_profile_pic.png streak_bg.png -o my_blueprint_profile.png
+python bluepaw.py my_profile_pic.png streak_bg.png -o my_blueprint_profile.png
 ```
 
 ### Screenshots
+
+| Before | After |
+|:-----:|:-----------:|
+| <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/48693a25-644c-4525-ba45-c5f878d379b0" /> |    <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/b3078319-c44a-4540-ba08-d3c861edc85b" />    |
 
 ### License
 
