@@ -40,7 +40,7 @@ pip install rembg
 The tool is run from the command line and requires an input image and a background streak image. An optional foreground streak image can also be provided.
 
 ```Bash
-python bluepaw.py -h
+./bluepaw -h
 ```
 
 ### Command-line Arguments
@@ -58,7 +58,7 @@ python bluepaw.py -h
 Here's an example of how to run the tool:
 
 ```Bash
-python bluepaw.py my_profile_pic.png streak_bg.png -o my_blueprint_profile.png
+./bluepaw my_profile_pic.png streak_bg.png -o my_blueprint_profile.png
 ```
 
 ### Screenshots
