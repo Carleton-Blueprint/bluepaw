@@ -1,0 +1,7 @@
+bluepaw.build/
+bluepaw.dist/
+bluepaw.onefile-build/
+input/
+
+# bin
+bluepaw
