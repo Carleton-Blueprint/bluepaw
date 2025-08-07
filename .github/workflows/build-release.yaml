@@ -25,12 +25,13 @@ jobs:
       - name: Build binary with Nuitka
         run: |
           pip install rembg pillow nuitka ordered-set
-          nuitka --onefile --standalone bluepaw.py
+          nuitka --onefile --standalone --output-filename=bluepaw bluepaw.py
 
-      - name: Create release
-        if: github.event_name == 'release'
+      - name: Create a new release
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          tag_name: v1.0.${{ github.run_number }}
+          name: Release ${{ github.run_number }}
           files: bluepaw
